@@ -1,0 +1,122 @@
+/* Color Palette, Never use colors that are not defined in the palette */
+
+$prepaird-purple: #8b4694;//#683691;
+$prepaird-medium-purple: #95569D;//#785099;
+$prepaird-light-purple: #A067A7;//#8458A8;
+$prepaird-lighter-purple: #AA78B1;//#9974b6;
+$prepaird-lightest-purple: #B589BA;//#C8B5D8;
+
+$aquamarine: #04d2a4;
+$asparagus: #8aa85c;
+$black: #000000;
+$blueberry: #40448c;
+$bluish-grey: #7d9298;
+$brownish: #a36151;
+$burnt-red: #a50808;
+$dark-sky-blue-two: #5cbce7;
+$dark-sky-blue: #25a9e1; // === rgba(37, 169, 226, 100);
+$dark-taupe: #83614c;
+$dusk: #56648a;
+$dusty-lavender: #b9a3ba;
+$dusty-orange: #e9783b;
+$dusty-teal: #448980;
+$gargoyle-gas: #FFE74C;
+$gold: #e4b60c;
+$green: #17972f;
+$greyish-brown: #4a4a4a;
+$ice-blue: #f7fdff;
+$light-grey: #ccc;
+$light-blue-grey: #cadde4;
+$light-forest-green: #5a985d;
+$orchid-two: #cd70bc;
+$orchid: #cb73bb;
+$pastel-red: #e26363;
+$pinkish-brown: #bc6c63;
+$portland-orange: #F46036;
+$rusty-orange: #e15b12;
+$sandy: #f3bf89;
+$stormy-blue: #51889a;
+$tart-orange: #FE4A49;
+$tomato: #e53939;
+$warm-grey-two: #a0a0a0;
+$warm-grey: #6f6f6f;
+$white-four: #d2d2d2;
+$white-three: #eeeeee;
+$white-two: #fafafa;
+$white: #ffffff;
+
+// New colors added by Jans desigs, any other colors should be looked over and see if they can be removed
+$light-eggplant-two: #8b4794;
+$light-eggplant-three: #7c3f84;
+$soft-purple: #b369bd;
+$pale-grey: #eaecee;
+$pale-grey-two: #fbfbfd;
+$pale-grey-three: #d8dce6;
+$pale-grey-four: #f8f9fb;
+$black-three: #030303;
+$grass: #58a92a;
+$squash: #ecbc1f;
+$warm-grey-three: #818181;
+$warm-grey-four: #9a9a9a;
+$purpley-grey: #a09fa0;
+$charcoal-grey: #3e3f42;
+$heather: #a79db2;
+$darkish-green: #249533;
+$cool-grey: #989ba1;
+$brownish-grey: #686868;
+$grape: #682f71;
+$greyish: #b0b0b0;
+$black-four: #0b0b0b;
+$grey-blue: #6a7593;
+$white-eight: #d5d5d5;
+$white-nine: #f6f6f6;
+$black-two: #151515;
+$medium-green: #39b54a;
+$medium-green-two: #34ad44;
+$tree-green: #208b2e;
+
+$danger: #D0021B;
+$success: #13B131;
+
+
+/* Contextualized color names */
+$hint-color: $greyish-brown;
+$warning-color: $tomato;
+$skill-badge-color: $light-eggplant-two;
+$skill-not-required-badge-color: $prepaird-lighter-purple;
+$dropdown-button-color: $rusty-orange;
+$dropdown-button-hover-color: $dusty-orange;
+$action-button-color: $dark-sky-blue;
+$action-button-hover-color: $dark-sky-blue-two;
+$cancel-button-color: $greyish-brown;
+$cancel-button-hover-color: $warm-grey;
+$delete-button-color: $tomato;
+$delete-button-hover-color: $pastel-red;
+$progress-bar-color: $grass;
+$progress-bar-color-2: $squash;
+$default-background-color: #f2f2f2;
+$panel-color: $white;
+$panel-edit-color: $ice-blue;
+$panel-border-color: $pale-grey;
+$input-background-color: $white;
+$input-border-color: $pale-grey;
+$input-border-color-focus: $greyish-brown;
+$input-placeholder-color: $charcoal-grey;
+$modal-background: $white;
+$edit-modal-background: $white;
+$modal-close-icon-color: $warm-grey-two;
+$modal-header-background: $white;
+$modal-background: $white;
+$list-item-hover-background-color: $pale-grey-four;
+$disabled-border-color: #d5d5d5;
+$disabled-background-color: #f6f6f6;
+
+/* Text colors */
+$default-label-font-color: $black-three;
+$default-table-font-color: $greyish-brown;
+$default-font-color: $black-three; //$greyish-brown;
+$default-header-font-color: $black-three;
+$default-header-active-font-color: $white;
+$default-header-clickable-hover-font-color: $dark-sky-blue;
+$input-font-color: $charcoal-grey;
+$disabled-font-color: $cool-grey;

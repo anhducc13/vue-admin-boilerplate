@@ -1,0 +1,78 @@
+
+@mixin position($position, $top: null, $right: null, $bottom: null, $left: null) {
+    position: $position;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+@mixin default-input-button {
+    box-shadow: 0 1px 1px 0 rgba(22, 29, 37, 0.05);
+    background-image: linear-gradient(to top, #f6f7f9, $white);
+    border-radius: 4px;
+    color: $charcoal-grey;
+    font-size: 14px;
+    border: solid 1px $pale-grey-three;
+    cursor: pointer;
+    height: 36px;
+    font-family: 'Roboto-Regular';
+  
+    &.disabled,
+    &[disabled] {
+      @include disabled-button;
+    }
+  
+    &:hover {
+      box-shadow: 0 1px 1px 0 rgba(22, 29, 37, 0.05);
+      background-image: linear-gradient(to top, #edf0f5, #fafafa);
+      border: solid 1px $pale-grey-three;
+    }
+  
+    &:active,
+    &.active {
+      box-shadow: 0 1px 1px 0 rgba(22, 29, 37, 0.05);
+      background-image: linear-gradient(to top, #e4e9f1, #fafafa);
+      border: solid 1px #bfc5d2;
+    }
+  
+    &::placeholder,
+    .placeholder {
+      color: $input-placeholder-color;
+      opacity: 0.4;
+    }
+  }
+  
+  @mixin default-button() {
+    @include default-input-button;
+    outline: none;
+    padding: 8px 20.5px;
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+  
+    &.icon  {
+      > span:last-child {
+        float: right;
+        margin-top: 1px;
+        margin-left: 10px;
+      }
+      &.wide {
+        > span:last-child {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+  @mixin disabled-button() {
+    background-image: linear-gradient(to top, $disabled-background-color, $disabled-background-color) !important;
+    color: $disabled-font-color !important;
+    border: solid 1px $disabled-border-color !important;
+    cursor: default;
+  }
+  @mixin transition($args...) {
+    -webkit-transition: $args;
+    -moz-transition: $args;
+    -ms-transition: $args;
+    -o-transition: $args;
+    transition: $args;
+  }

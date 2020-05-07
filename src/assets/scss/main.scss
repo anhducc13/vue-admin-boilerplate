@@ -1,0 +1,62 @@
+@import 'shared/common';
+@import 'shared/button';
+
+.view-loader,
+.loader {
+  width: 50px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &:after {
+    display: block;
+    position: relative;
+    content: '';
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border-top: 1px solid darken($prepaird-gray, 10%);
+    border-bottom: 1px solid darken($prepaird-gray, 50%);
+    border-left: 1px solid darken($prepaird-gray, 10%);
+    border-right: 1px solid darken($prepaird-gray, 50%);
+    opacity: .7;
+    animation: spin 600ms linear infinite;
+  }
+}
+
+@keyframes spin {
+  100% { transform: rotate(360deg); }
+}
+
+.anticon {
+  vertical-align: 0.125em;
+}
+
+.has-error .ant-form-explain {
+  font-size: 90%;
+  font-weight: 600;
+}
+
+.ant-table .button-line-large {
+  display: inline-flex;
+}
+.white-space-nowrap {
+  white-space: nowrap!important;
+}
+.ant-table .button-line-large .ant-btn {
+  height: 24px;
+  font-size: 100%;
+  align-items: center;
+}
+
+.ant-table .button-line-large .ant-btn .anticon{
+  line-height: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0px;
+  list-style: none;
+  padding: 0px;
+}

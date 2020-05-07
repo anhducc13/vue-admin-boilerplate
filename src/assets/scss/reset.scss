@@ -1,0 +1,25 @@
+a:hover {
+  text-decoration: none;
+}
+a:focus {
+  text-decoration: none;
+}
+label {
+  margin: 0;
+}
+/* Reset VModal */
+.v--modal {
+  box-shadow: none!important;
+  background-color: transparent!important;
+  height: auto!important;
+  top: 80px!important;
+  padding-bottom: 80px!important;
+}
+.v--modal-background-click {
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}

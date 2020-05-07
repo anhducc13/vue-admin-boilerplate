@@ -1,0 +1,98 @@
+@import 'styleguide/colors';
+
+// sizes
+$large-screen: 1280px !default;
+$medium-screen: 768px !default;
+$small-screen: 480px !default;
+$tiny-screen: 320px !default;
+$tablet-screen: $medium-screen;
+$phone-screen: $small-screen;
+$tiny-phone-screen: $tiny-screen;
+
+$large-screen-width: 1280px;
+
+// paddings
+$panel-padding: 32px;
+$page-padding: 134px;
+
+// colors
+$warm-gray: #787878;
+$bright-light-blue: #35c3ff;
+$fresh-grass-green: #2bac3f;
+
+$prepaird-blue: #30aae0;
+$prepaird-blue-dark:#4B91F8;
+$prepaird-orange: #e15b12;
+$prepaird-light-orange: #E6783D;
+$prepaird-green: #21ae38; // #4CAF50?
+$prepaird-light-green: #4CAF50;
+$prepaird-gray: #d6dee2;
+$prepaird-light-gray: #f7f7f7;
+$prepaird-red: #CE1111;
+$prepaird-yellow: #e5c54f;
+$default-preparid-color: $prepaird-purple;
+$dark-gray: $greyish-brown !default;
+$medium-gray: #e8e8e8;
+$sort-of-white: #fdfdfd;
+$base-font-color: $dark-gray !default;
+$light-base-font-color: $sort-of-white !default;
+$navigation-color: transparentize($base-font-color, 0.3);
+$light-navigation-font-color: lighten($light-base-font-color, 6%);
+$toolbar-background-base-color: $default-preparid-color;
+$navigation-background: $default-preparid-color;
+$box-border: 1px solid $white-four;
+$box-radius: 8px;
+$list-profile-pic-height: 36px;
+
+$pd-text-color: $base-font-color;
+$pd-title-color: $base-font-color;
+$pd-title-bg: $sort-of-white;
+$pd-picker-bg: $sort-of-white;
+$pd-picker-border: $prepaird-light-gray;
+$pd-picker-border-bottom: $prepaird-light-gray;
+$pd-picker-shadow: $dark-gray;
+$pd-th-color: $base-font-color;
+$pd-day-color: $base-font-color;
+$pd-day-bg: $prepaird-light-gray;
+$pd-day-hover-color: $sort-of-white;
+$pd-day-hover-bg: $prepaird-purple;
+$pd-day-today-color: $prepaird-blue;
+$pd-day-selected-color: #fff;
+$pd-day-selected-bg: darken($prepaird-gray, 20);
+$pd-day-selected-shadow: darken($prepaird-gray, 20);
+$pd-day-disabled-color: #999;
+$pd-week-color: #999;
+
+// Social networks
+$skype-color: #12A5F4;
+$linkedin-color: #0077b5;
+$facebook-color: #3b5998;
+$twitter-color: #55acee;
+
+$status-draft: #686868;
+$status-shared_draft: #E5C54F;
+$status-external: #11B02F;
+$status-open: #B981BF;
+$status-agencies: #F7981C;
+$status-request: #EC591B;
+$status-completed: #25A9E1;
+$status-closed: #F85359;
+$blue-hover: #25A9E1;
+
+// font-sizes
+$default-font-size: 14px !default;
+
+// usefuls
+.inline-block {
+  display: inline-block;
+}
+
+$input-content-padding: 6px;
+$input-border: 1px solid $input-border-color;
+$input-border-focus: 1px solid $input-border-color-focus;
+$input-font-color: $charcoal-grey;
+
+$modal-top-bottom-padding: 18px;
+$modal-right-left-padding: 30px;
+$modal-padding: $modal-top-bottom-padding $modal-right-left-padding;
+$modal-radius: 4px;

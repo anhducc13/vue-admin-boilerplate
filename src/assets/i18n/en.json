@@ -1,0 +1,133 @@
+{
+  "error": {
+    "REQUEST_ERROR": "Request error",
+    "LOGIN_INFO_INVALID": "Login information invalid",
+    "SERVER_DOWN_MODAL_TITLE": "Server is down",
+    "SERVER_DOWN_MODAL_DESCRIPTION": "Server is unresponsive, this may be because of a scheduled maintenance. <br><br>Please click try again to check if it has come up again.",
+    "TRY_AGAIN": "Try again",
+    "UNKNOWN_ERROR": "An unknown error occurred.",
+    "VALIDATION_ERROR": "Validation error",
+    "EMAIL_ALREADY_IN_USE": "Email already in use",
+    "USERNAME_ALREADY_IN_USE": "Username already in use",
+    "DONT_ACCEPT_DELETE_SELF": "Don't accept delete myself"
+  },
+  "validate": {
+    "FIELD_REQUIRED": "Field required",
+    "USERNAME_VALIDATE_MSG": "Username is between 8 and 255 characters and not contain space",
+    "EMAIL_VALIDATE_MSG": "Email is invalid",
+    "PASSWORD_VALIDATE_MSG": "Password is between 8 and 255 characters and not contain space"
+  },
+  "header": {
+    "USER_INFO": "User",
+    "LOGOUT": "Logout"
+  },
+  "menu": {
+    "HOME": "Home",
+    "DASHBOARD": "Dashboard",
+    "MANAGE_USER": "Manage user",
+    "LIST_USER": "List user",
+    "ADD_USER": "Add user",
+    "MANAGE_ROLE": "Manage role",
+    "LIST_ROLE": "List role",
+    "ADD_ROLE": "Add role"
+  },
+  "account": {
+    "LOGIN_MANAGE_SYSTEM": "Login manage system",
+    "REMEMBER_ME": "Remember me",
+    "FORGOT_PASSWORD": "Forgot password",
+    "LOGIN": "Login",
+    "OTHER_METHOD": "Other method",
+    "USERNAME_OR_EMAIL": "Username or email",
+    "PASSWORD": "Password"
+  },
+  "tooltip": {
+    "FILTER": "Filter",
+    "COLUMNS": "Columns"
+  },
+  "shared": {
+    "OF": "of",
+    "SHOW": "Show",
+    "ALL": "All",
+    "DOWNLOAD": "Download",
+    "DOWNLOAD_CSV": "Download CSV",
+    "DOWNLOAD_XLXS": "Download Excel",
+    "DEFAULT_TABLE_LIST_PLACEHOLDER": "No items",
+    "ACTIVE": "Active",
+    "INACTIVE": "Inactive",
+    "SUCCESS": "Success",
+    "ERROR": "Error",
+    "VIETNAMESE": "Vietnamese",
+    "ENGLISH": "English",
+    "ENTER_KEYWORD": "Enter keyword",
+    "RESET": "Reset",
+    "SAVE": "Save",
+    "EDIT": "Edit",
+    "DELETE": "Delete",
+    "UPDATE_SUCCESS": "Update success",
+    "CREATE_SUCCESS": "Create success",
+    "DELETE_SUCCESS": "Delete success",
+    "CONFIRM": "Confirm",
+    "DO_YOU_WANT_DELETE_THIS_RECORD": "Do you want to delete this record?"
+  },
+  "listHeader": {
+    "RESULTS_LISTED": "results"
+  },
+  "publishOption": {
+    "DRAFT": "Draft",
+    "SHARED_DRAFT": "Shared Draft",
+    "EXTERBAL_AGENCIES": "Agencies",
+    "INTERNAL": "Connected Talent pool",
+    "REQUEST": "Request",
+    "COMPLETED": "Completed",
+    "CLOSED": "Closed",
+    "JOBBOARD": "Jobboard",
+    "TOOLTIP_STATUS_DRAFT": "Draft - Only you",
+    "TOOLTIP_STATUS_SHARED_DRAFT": "Shared Draft - Only you and your invited team",
+    "TOOLTIP_STATUS_JOBBOARD": "Published on jobboard",
+    "TOOLTIP_STATUS_AGENCIES": "Published to agencies",
+    "TOOLTIP_STATUS_CONNECTED_TO_POOL": "Published to connected talent pool",
+    "TOOLTIP_STATUS_COMPLETE": "Completed - No more applications",
+    "TOOLTIP_STATUS_CLOSE": "Closed - Process is closed and not active any longer",
+    "TOOLTIP_STATUS_REQUEST": "Customer request"
+  },
+  "user": {
+    "USER_LIST": "List user",
+    "USERNAME": "Username",
+    "EMAIL": "Email",
+    "FIRSTNAME": "First name",
+    "LASTNAME": "Last name",
+    "ROLE": "Role",
+    "CREATED_AT": "Created at",
+    "ADD_NEW_USER": "Add new user",
+    "STATUS": "Status",
+    "PASSWORD": "Password",
+    "UPDATE_USER": "Update user",
+    "DELETE_USER_SELECTED": "Delete selected user",
+    "PLEASE_SELECT_AT_LEAST_ONE_USER": "Please choose at least 1 user"
+  },
+  "role": {
+    "ROLE_LIST": "List role",
+    "NAME": "Name",
+    "ROLE_ACP": "Role accept",
+    "DEFAULT_SIGNUP": "Default signup",
+    "ADD_NEW_ROLE": "Add new role",
+    "STATUS": "Status",
+    "CREATED_AT": "Created at",
+    "UPDATED_AT": "Updated at"
+  },
+  "upload": {
+    "HINT": "Click or drag the file here to upload",
+    "LOADING": "Uploading...",
+    "NO_SUPPORTED": "Browser is not supported, please use IE10+ or other browsers",
+    "SUCCESS": "Upload success",
+    "FAIL": "Upload failed",
+    "PREVIEW": "Preview",
+    "OFF": "Cancel",
+    "CLOSE": "Close",
+    "BACK": "Back",
+    "SAVE": "Save",
+    "ONLY_IMG": "Image only",
+    "OUT_OF_SIZE": "Image exceeds size limit: ",
+    "LOWEST_PX": "Image\\'s size is too low. Expected at least: "
+  }
+}

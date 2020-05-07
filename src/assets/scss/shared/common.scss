@@ -1,0 +1,249 @@
+@import '../everything';
+
+.c-action-button {
+    @include default-button();
+    font-size: 14px;
+    box-shadow: 0 1px 1px 0 rgba(22, 29, 37, 0.1), inset 0 2px 0 0 rgba(255, 255, 255, 0.06);
+    background-image: linear-gradient(to top, $dark-sky-blue, $dark-sky-blue);
+    border: solid 1px $dark-sky-blue;
+    color: $white;
+  
+    &:hover {
+      box-shadow: 0 1px 1px 0 rgba(22, 29, 37, 0.1), inset 0 2px 0 0 rgba(255, 255, 255, 0.06);
+      background-image: linear-gradient(to top, $dark-sky-blue-two, $dark-sky-blue);
+      border: solid 1px $dark-sky-blue;
+    }
+  
+    &:active {
+      box-shadow: 0 1px 1px 0 rgba(22, 29, 37, 0.1), inset 0 2px 0 0 rgba(255, 255, 255, 0.06);
+      background-image: linear-gradient(to top, $dark-sky-blue-two, $dark-sky-blue);
+      border: solid 1px $dark-sky-blue;
+    }
+    &.some-with {
+      min-width: 110px;
+    }
+    &.btn-withdrawn {
+      background-image: linear-gradient(to top, $prepaird-orange, $prepaird-orange);
+      border: solid 1px $prepaird-orange;
+      min-width: 110px;
+      &:hover {
+        box-shadow: 0 1px 1px 0 rgba(22, 29, 37, 0.1), inset 0 2px 0 0 rgba(255, 255, 255, 0.06);
+        background-image: linear-gradient(to top, $prepaird-light-orange, $prepaird-orange);
+        border: solid 1px $prepaird-orange;
+      }
+    
+      &:active {
+        box-shadow: 0 1px 1px 0 rgba(22, 29, 37, 0.1), inset 0 2px 0 0 rgba(255, 255, 255, 0.06);
+        background-image: linear-gradient(to top, $prepaird-light-orange, $prepaird-orange);
+        border: solid 1px $prepaird-orange;
+      }
+    }
+    
+    &.btn-reapply {
+      background-image: linear-gradient(to top, $blueberry, $blueberry);
+      border: solid 1px $blueberry;
+      min-width: 110px;
+      &:hover {
+        box-shadow: 0 1px 1px 0 rgba(22, 29, 37, 0.1), inset 0 2px 0 0 rgba(255, 255, 255, 0.06);
+        background-image: linear-gradient(to top, $dark-sky-blue, $blueberry);
+        border: solid 1px $dark-sky-blue;
+      }
+    
+      &:active {
+        box-shadow: 0 1px 1px 0 rgba(22, 29, 37, 0.1), inset 0 2px 0 0 rgba(255, 255, 255, 0.06);
+        background-image: linear-gradient(to top, $dark-sky-blue, $blueberry);
+        border: solid 1px $dark-sky-blue;
+      }
+    }
+  
+    &.btn-accept {
+      background-image: linear-gradient(to top, $prepaird-green, $prepaird-green);
+      border: solid 1px $prepaird-green;
+      &:hover {
+        box-shadow: 0 1px 1px 0 rgba(22, 29, 37, 0.1), inset 0 2px 0 0 rgba(255, 255, 255, 0.06);
+        background-image: linear-gradient(to top, $prepaird-light-green, $prepaird-green);
+        border: solid 1px $prepaird-green;
+      }
+    
+      &:active {
+        box-shadow: 0 1px 1px 0 rgba(22, 29, 37, 0.1), inset 0 2px 0 0 rgba(255, 255, 255, 0.06);
+        background-image: linear-gradient(to top, $prepaird-light-green, $prepaird-green);
+        border: solid 1px $prepaird-green;
+      }
+    }
+  
+    &.btn-finish {
+      background-image: linear-gradient(to top, $prepaird-blue-dark, $prepaird-blue-dark);
+      border: solid 1px $prepaird-blue-dark;
+      &:hover {
+        box-shadow: 0 1px 1px 0 rgba(22, 29, 37, 0.1), inset 0 2px 0 0 rgba(255, 255, 255, 0.06);
+        background-image: linear-gradient(to top, $prepaird-blue, $prepaird-blue-dark);   
+        border: solid 1px $prepaird-blue-dark;
+      }
+    
+      &:active {
+        box-shadow: 0 1px 1px 0 rgba(22, 29, 37, 0.1), inset 0 2px 0 0 rgba(255, 255, 255, 0.06);
+        background-image: linear-gradient(to top, $prepaird-blue, $prepaird-blue-dark);
+        border: solid 1px $prepaird-blue-dark;
+      }
+    }
+  }
+
+  
+.c-overlay {
+    @include position(fixed, 0);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(#000, 0.7);
+    opacity: 0;
+    text-align: left;
+    transition: opacity 0.25s ease;
+    visibility: hidden;
+    z-index: 9999;
+  
+    &.open {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  
+  .global-error-modal {
+    display: flex;
+    justify-content: center;
+  
+    .global-error-modal-content {
+      margin-top: 200px;
+      display: flex;
+      flex-direction: column;
+      width: 600px;
+  
+      .header {
+        display: flex;
+        align-items: center;
+      }
+  
+      .body {
+        min-width: auto;
+        font-size: 16px;
+      }
+    }
+  }
+  
+  
+  .c-modal-header {
+    display: flex;
+    align-items: center;
+    padding: $modal-padding;
+    color: $black-three;
+    background-color: $modal-header-background;
+    max-width: 1023;
+    box-shadow: 0 1px 0 0 $pale-grey;
+    border-radius: $modal-radius;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom: 1px solid $panel-border-color;
+    font-family: 'Roboto-Medium';
+    font-size: 16px;
+  
+    .c-modal-header-close {
+      margin-left: auto;
+      cursor: pointer;
+      font-size: 14px;
+      margin-bottom: 2px;
+      color: #b5b5b7;
+  
+      &:hover {
+        color: $warning-color;
+      }
+  
+      &::after {
+        font-family: "FontAwesome";
+        content: '\f00d';
+      }
+    }
+  }
+  .t-modal-header {
+    font-family: 'Roboto-Regular';
+    font-size: 16px;
+    color: $black-three
+  }
+  
+  .c-modal-body,
+  .c-modal-body-2 {
+    @media screen and (min-width: 767px) {
+      min-width: 570px;
+    }
+    max-width: 1023px;
+    max-height: calc(100vh - 230px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: $modal-background;
+    padding: $modal-padding;
+  
+    &.edit-mode {
+      // background: $panel-edit-color;
+    }
+  
+    &.no-padding {
+      padding: 0;
+    }
+    &.roboto-medium {
+      .t-input-label {
+          font-family: 'Roboto-Medium' !important;
+      }
+    }
+    &.full {
+      max-height: inherit;
+      min-width: 1025px;
+    }
+  }
+  
+  .c-modal-footer {
+    border-radius: $modal-radius;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    padding: $modal-padding;
+    border-top: 1px solid $panel-border-color;
+    background-color: $pale-grey-two;
+  
+    &.edit-mode {
+      // background: $panel-edit-color;
+    }
+}
+
+.c-button-container {
+    display: flex;
+    flex-direction: row-reverse;
+  
+    &.is-centered {
+      flex-direction: flex-start;
+      justify-content: center;
+    }
+  
+    > div:not(:last-child),
+    > action-button:not(:last-child),
+    > button:not(:last-child) {
+      margin-left: 20px;
+    }
+  
+    &:not(.is-centered) {
+      > .c-cancel-button {
+        margin-right: auto;
+      }
+    }
+  }
+
+  .c-panel-2 {
+    border-radius: 4px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.04);
+    background-color: $white;
+    border: solid 1px $panel-border-color;
+  
+    &.has-padding {
+      padding: 25px 30px;
+    }
+  }
+
+  .cursor-pointer {
+    cursor: pointer !important;
+  }
