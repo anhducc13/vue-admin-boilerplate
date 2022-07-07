@@ -21,7 +21,7 @@
     "list-to-tree": "^2.2.3",
     "lodash": "^4.17.15",
     "mmenu-js": "^8.5.5",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "nprogress": "^0.2.0",
     "owl.carousel": "^2.3.4",
     "pdfjs-dist": "^2.3.200",
